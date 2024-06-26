@@ -10,7 +10,11 @@ SSL sẽ mã hóa dữ liệu được truyền trên web
 
 - SSL nguyên lý hoạt động:
 
+<<<<<<< HEAD:Task1/VietNix - Training .md
 ![Untitled](VietNix%20-%20Training%20/Untitled.png)
+=======
+![Untitled](Task1/VietNix - Training/Untitled 1.png)
+>>>>>>> 14ad9f187cebb00603b1b412c41afbff3a568339:Task1/VietNix - Training.md
 
 - SSL handshake
     1. Browser gửi “Hello”, gồm các thông tin liên quan để có thể giao tiếp (version SSL của client, dữ liệu theo phiên cụ thể và thông tin khác mà webserver cần giao tiếp với client bằng SSL).
