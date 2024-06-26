@@ -10,7 +10,7 @@ SSL sẽ mã hóa dữ liệu được truyền trên web
 
 - SSL nguyên lý hoạt động:
 
-![Untitled](VietNix%20-%20Training%20f39e3cc759774d00872cd0ec16695752/Untitled.png)
+![Untitled](VietNix%20-%20Training%20/Untitled.png)
 
 - SSL handshake
     1. Browser gửi “Hello”, gồm các thông tin liên quan để có thể giao tiếp (version SSL của client, dữ liệu theo phiên cụ thể và thông tin khác mà webserver cần giao tiếp với client bằng SSL).
@@ -19,12 +19,12 @@ SSL sẽ mã hóa dữ liệu được truyền trên web
     4. Client tạo ra session key bằng cách encrypt public key, và gửi đến server.
     5. Server decrypt session key bằng private key và ACK về lại client.
 
-![Untitled](VietNix%20-%20Training%20f39e3cc759774d00872cd0ec16695752/Untitled%201.png)
+![Untitled](VietNix%20-%20Training%20/Untitled%201.png)
 
 - Data Transfer
     1. Client và server sử dụng session key để encrypt/decrypt data và gửi/nhận chúng.
 
-![Untitled](VietNix%20-%20Training%20f39e3cc759774d00872cd0ec16695752/Untitled%202.png)
+![Untitled](VietNix%20-%20Training%20/Untitled%202.png)
 
 - Các thành phần của SSL
 • **CSR (Certificate Signing Request)**: Đây là 1 đoạn text chứa thông tin của chủ sở hữu (tên, địa chỉ, quốc gia…); domain được mã hóa; thông tin public key. Thông tin này được gửi đến nhà cung cấp dịch vụ SSL để xác nhận.
@@ -36,7 +36,7 @@ SSL sẽ mã hóa dữ liệu được truyền trên web
 
 Truy cập [https://csrgenerator.com/](https://csrgenerator.com/)
 
-![Untitled](VietNix%20-%20Training%20f39e3cc759774d00872cd0ec16695752/Untitled%203.png)
+![Untitled](VietNix%20-%20Training%20/Untitled%203.png)
 
 ## CSR file dùng làm gì trong quá trình tạo SSL
 
@@ -126,7 +126,7 @@ Ví dụ: “mail.example.com" là một subdomain của "example.com".
 
 - Virtual Host là một dạng lưu trữ mà cho phép bạn nhúng nhiều domain khác nhau trên một địa chỉ IP trong một Sever. Server sẽ tự động hiểu domain nào đang vận hành bên trong vị trí lưu trữ Server tùy theo cách cài đặt của bạn.
 
-![Untitled](VietNix%20-%20Training%20f39e3cc759774d00872cd0ec16695752/Untitled%204.png)
+![Untitled](VietNix%20-%20Training%20/Untitled%204.png)
 
 - Cách thức vận hành của Virtual Host
 
@@ -134,19 +134,19 @@ Ví dụ: “mail.example.com" là một subdomain của "example.com".
     
     Một IP sử dụng cho 1 Website. Webserver sẽ chịu trách nhiệm mapping IP được yêu cầu có đế đến đúng website mong muốn. Vì thế, mỗi trang web sẽ được định nghĩa bởi 1 IP duy nhất . Tuy nhiên IP-Based (dùng trên 1 máy chủ) cần thiết lập Virtual Interface trên 1 máy chủ để có thể sử dụng được nhiều IP.
     
-    ![Untitled](VietNix%20-%20Training%20f39e3cc759774d00872cd0ec16695752/Untitled%205.png)
+    ![Untitled](VietNix%20-%20Training%20/Untitled%205.png)
     
     1. Port Based
         
         Tương đương với IP-Based, sự khác biệt ở phương thức này là có thể quản lý nhiều trang web dựa theo số Port được định nghĩa cùng với IP hoặc tên miền. Ngoài ra, Port sử dụng tránh lặp lại với Port được mặc định của ứng dụng khác khi đang hoạt động.
         
-        ![Untitled](VietNix%20-%20Training%20f39e3cc759774d00872cd0ec16695752/Untitled%206.png)
+        ![Untitled](VietNix%20-%20Training%20/Untitled%206.png)
         
     2. Name Based
         
         Nhiều website sử dụng chung 1 IP. Server sẽ đối chiếu http header từ client yêu cầu để ánh xạ đến đúng website được chỉ định theo Domain.
         
-        ![Untitled](VietNix%20-%20Training%20f39e3cc759774d00872cd0ec16695752/Untitled%207.png)
+        ![Untitled](VietNix%20-%20Training%20/Untitled%207.png)
         
 
 ## 
@@ -323,7 +323,7 @@ Các loại record của DNS
     Authoritative Name Server lưu trữ thông tin về tên miền và địa chỉ IP tương ứng. Là điểm cuối của quá trình truy vấn và phân giải địa chỉ IP cần thiết cho DNS Recursor.
     
 
-![Untitled](VietNix%20-%20Training%20f39e3cc759774d00872cd0ec16695752/a727fd5b-c2bc-4fa8-b048-d5570822d2c0.png)
+![Untitled](VietNix%20-%20Training%20/a727fd5b-c2bc-4fa8-b048-d5570822d2c0.png)
 
 - Cách thức hoạt động
 
